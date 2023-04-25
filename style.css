@@ -1,0 +1,184 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family:Poppins;
+    src: url('fonts/Poppins-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background: linear-gradient(90deg,#b7b78a 50%,#3c6255);
+}
+
+
+.col-12{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.col-6{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 30% auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.col-7{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 30% auto;
+    border-radius: 10px;
+}
+.col-4{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 80% 20% auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+.container{
+    background-color: white;
+    height: 100%;
+    width: 1500px;
+   border-radius: 20px;
+    margin: auto;
+    
+}
+.img{
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+}
+.img-profil{
+    margin: auto;
+}
+.biodata{
+    font-family: Poppins;
+}
+.biodata p{
+    font-size: 12px;
+}
+.about-me h4{
+    font-size: 20px;
+    font-family: Poppins;
+}
+.deskripsi p{
+    font-family: Poppins;
+    font-size: 12px;
+    text-align: justify;
+}
+.pengalaman{
+    margin-top: -10px;
+}
+.list-kerja ul {
+    padding: 5px;
+    font-family: Poppins;
+    font-size: 12px;
+}
+ul li{
+    padding: 5px;
+}
+.list-kerja ul li{
+    margin-left: 20px;
+}
+.list-pendidikan ul{
+        padding: 5px;
+        font-family: Poppins;
+        font-size: 12px;
+    }
+    .list-pendidikan ul li{
+        margin-left: 10px;
+    }
+    .navbar .logo{
+        width: 100%;
+        height: 60px;
+        background-color:transparent;
+        border-right-color: transparent;
+        position: relative;
+    }
+    .navbar .logo::before{
+        content: "PORTOFOLIO";
+        color: black;
+        font-size: 20px;
+        font-family: Poppins;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+    .navbar{
+        width: 90%;
+        margin: auto;
+        height: 15vh;
+        font-family: Poppins;
+    }
+    .navbar, .navlist{
+        display:flex;
+        
+    }
+    .navbar li{
+        list-style: none;
+        padding: 20px;
+    }
+    .navlist a{
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+        width: 200px;
+        background-color: red;
+    }
+    .navlist a::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: black;
+        transition-timing-function: .5s ease-in-out;
+    }
+    .navlist a:hover::before{
+        width: 100%;
+    }
+    
+    
+    @media screen and(max-width:796px) {
+        .navlist{
+            display: none;
+        }
+    }
+@media (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    .col-6{
+        display: grid;
+        grid-gap:10px;
+        grid-template-columns: 100%;
+        border-radius: 10px;
+        padding: 10px;       
+    }
+    .img{
+        width: 300px;
+        height: 320px;
+        border-radius: 50%;
+        
+    }
+    .img-profil{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .col-7{
+        display: grid;
+        grid-gap:10px;
+        grid-template-columns: 50% auto;
+        border-radius: 10px;
+    }
+    .parag-right{
+        margin-top: 10px;
+    }
+}
