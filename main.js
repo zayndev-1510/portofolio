@@ -64,6 +64,20 @@ app.controller("homeController", function ($scope) {
     "Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan","Melakukan Pengujian Sistem Secara Resmi Di Publikasikan Di Ruangan Rektor Univeristas Dayanu Ikshanuddin Baubau"
     ]},
     ]
+    fun.hardskill=[
+        {
+            keterangan:"Microsoft Office"
+        },
+        {
+            keterangan:"Linux"
+        }
+    ];
 
-
+    fun.softskill=[
+        {keterangan:"Microsoft Office"},
+        {keterangan:"HTML & CSS"},  {keterangan:"Javascript ( React Js & Angular JS )"},{keterangan:"PHP ( Laravel & CI )"},
+        {keterangan:"Java & Kotlin ( Mobile Appllication )"},  {keterangan:"Golang ( Gorm & Gin )"},{keterangan:"Github"},
+    ];
+    
+    
 });

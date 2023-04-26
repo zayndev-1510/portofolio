@@ -414,6 +414,34 @@ header{
     margin: auto;
 
  }
+ /* skill */
+ .row-keahlian{
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.col-keahlian .title{
+    font-family: Poppins;
+    color:#00abf0;
+    margin-bottom: 10px;  
+}
+.col-keahlian .contents-keahlian .box{
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    background-color: #f5f5f5;
+    color: black;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px 0px #0d70f1;
+}
+.col-keahlian .contents-keahlian .box:hover{
+    box-shadow: 0px 3px 12px 0px #0b0bf7;
+}
 /* timeline education */
 
 main.row{
@@ -772,8 +800,55 @@ main.row{
     .banner__profil__sub h4{
         font-size: 25px;
     }
+
+    .tab-navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        background-color: rebeccapurple;
+        max-width: 870px;
+        margin: auto;
+    }
+    .tab-navigation .tabs{
+        font-family: Poppins;
+    }
+    .row-keahlian{
+        display: grid;
+        align-items: center;
+        padding: 10px;
+        margin: auto;
+        max-width: 560px;
+     
+    }
+    .col-keahlian .title{
+        font-family: Poppins;
+        color:#00abf0;
+        margin-bottom: 10px;  
+    }
+    .col-keahlian .contents-keahlian .box{
+        max-width: 550px;
+        padding: 10px;
+        border: 1px solid #081b29;
+        background-color: #081b29;
+        color: white;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-bottom: 20px;
+        font-family: Poppins;
+        text-align: justify;
+        border-radius: 10px;
+        box-shadow: 0px 3px 12px 0px #0d70f1;
+    }
+    .col-keahlian .contents-keahlian .box:hover{
+        box-shadow: 0px 3px 12px 0px #0b0bf7;
+    }
     main.row{
         display: grid;
+        flex-direction: column;
+        max-width: 100%;
     }
     .box ul{
         margin-left: 10px;

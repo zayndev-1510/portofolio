@@ -20,8 +20,6 @@
                     <li class="navbar__link"><a href="#pengalaman">Pengalaman</a></li>
                     <li class="navbar__link"><a href="#pendidikan">Pendidikan</a></li>
                     <li class="navbar__link"><a href="#keahlian">Keahlian</a></li>
-                    <li class="navbar__link"><a href="#keahlian">Kontak</a></li>
-                   
                 </ul>
                 <div class="navbar__ham">
                     <div class="navbar__icon"></div>
@@ -45,8 +43,10 @@
                 </div>
         </div>
     </section>
+    
     <section class="pendidikan">
         <div class="container">
+            
             <main class="row">
                 <section class="col" id="pendidikan">
                     <div class="title">
@@ -58,7 +58,6 @@
                             <h3>{{row.sekolah}}</h3>
                             <p>{{row.ket}}</p>
                         </div>
-                      
                     </div>
                 </section>
                 <section class="col" id="pengalaman">
@@ -80,37 +79,19 @@
     </section>
     <section id="keahlian">
         <div class="container">
-            <div class="banner__title">
-                <h4>Keahlian</h4>
-            </div>
-            <div class="contagion__cards">
-                <div class="contagion__card">
-                    <img src="image/html.png" alt="">
-                    <h2>HTML & CSS</h2>
+            <div class="row-keahlian" id="keahlian">
+               
+                <div class="col-keahlian" >
+                    <div class="title">
+                        <h2>Keahlian</h2>
+                    </div>
+                    <div class="contents-keahlian">
+                        <div class="box" ng-repeat="row in softskill">
+                            <h4>{{row.keterangan}}</h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="contagion__card">
-                    <img src="image/js.png" alt="">
-                    <h2>JS (Angular Dan React Js)</h2>
-                </div>
-                <div class="contagion__card">
-                    <img src="image/php.jpeg" alt="">
-                    <h2>PHP (Laravel & CI)</h2>
-                </div>
-            </div>
-            <div class="contagion__cards">
-                <div class="contagion__card">
-                    <img src="image/java_kotlin.png" alt="">
-                    <h2>Java & Kotlin (Mobile Developer)</h2>
-                </div>
-                <div class="contagion__card">
-                    <img src="image/golang.png" alt="">
-                    <h2>Golang (Gorm & Gim)</h2>
-                </div>
-                <div class="contagion__card">
-                    <img src="image/github.png" alt="">
-                    <h2>Github</h2>
-                </div>
-            </div>
+            </div>      
         </div>
     </section>
     <script src="angularjs/angular.min.js"></script>
