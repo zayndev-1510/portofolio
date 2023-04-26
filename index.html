@@ -1,168 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="homeApp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <title></title>
-</head>
-<body>
-    <div class="col-12">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo"></div>
-                <ul class="navlist">
-                    <li><a href="http://localhost:8000/home" class="active">Home</a></li>
-                    <li><a href="http://localhost:8000/gejala">About Me</a></li>
-                    <li><a href="http://localhost:8000/penyakit">Pengalaman</a></li>
-                    <li><a href="http://localhost:8000/konsultasi">Pendidikan</a></li>
-                </ul>
-            </div>
-           <div class="col-6">
-            <div class="col-12">
-                <div class="img-profil">
-                    <img src="3X4 1.jpg" class="img">
-                </div>
-                <div class="biodata">
-                    <h4 style="font-size: 15px;font-family: Poppins;border-bottom: 2px solid black;">Profil</h4>
-                    <div class="col-7">
-                        <p class="parag-right">Nama Lengkap</p>
-                        <p style="text-align: right;">Kensino Ode</p>
-                        <p>Email</p>
-                        <p style="text-align: right;">zayndev.1510k@gmail.com</p>
-                        <p>Nomor Telepon</p>
-                        <p style="text-align: right;">082297886738</p>
-                        <p>Facebook</p>
-                        <p style="text-align: right;">Zayn</p>
-                        <p>Instagram</p>
-                        <p style="text-align: right;">@zaynkun</p>
-                        <p>Github</p>
-                        <p style="text-align: right;">https://github.com/zayndev</p>
-                        
-                    </div>
-                   </div>
-                   <div class="pendidikan porto-pendidikan">
-                    <h4 style="font-size: 15px;font-family: Poppins;border-bottom: 2px solid black;">Pendidikan</h4>
-                    <div>
-                        <div class="list-pendidikan">
-                            <ul>
-                                <li>Lulusan SMP NEGRI 1 MANGOLI UTARA 2010-2012</li>
-                                <li>Lulusan SMA NEGRI 1 MANGOLI UTARA 2012-2014</li>
-                                <li>Lulusan Teknik Informatika Unidayan Baubau 2015-2020</li>
-                            </ul>
-                         </div>
-                    </div>
-                   </div>
-                   <div class="pendidikan porto-keterampilan">
-                    <h4 style="font-size: 15px;font-family: Poppins;border-bottom: 2px solid black;">Keterampilkan Lunak</h4>
-                    <div>
-                        <div class="list-pendidikan">
-                            <ul>
-                                <li>Microsoft Office</li>
-                                <li>Linux</li>
-                                <li>Git & Github</li>
-                            </ul>
-                         </div>
-                    </div>
-                   </div>
-                   <div class="pendidikan porto-keahlian">
-                    <h4 style="font-size: 15px;font-family: Poppins;border-bottom: 2px solid black;">Keahlian</h4>
-                    <div>
-                        <div class="list-pendidikan">
-                            <ul>
-                                <li>HTML & CSS</li>
-                                <li>Javascript & PHP</li>
-                                <li>Java & Kotlin</li>
-                                <li>Golang</li>
-                                <li>Laravel & CI</li>
-                                <li>Gorm</li>
-                            </ul>
-                         </div>
-                    </div>
-                   </div>
-            </div>
+    <link rel="stylesheet" href="design.css"/>
 
-            <div class="col-12">
-                <div class="about-me">
-                    <h4>Kensino Ode</h4>
-                    <h4>Full Stack Developer</h4>
-                    <div class="deskripsi">
-                        <p>Saya Adalah Full Stack developer yang mampu membangun aplikasi berbasis website dan mobile dengan menggunakan stack teknologi modern,
-                            serta mampu merancang dan menganalisis sebuah sistem atau aplikasi sesuai kebutuhan dan memiliki pengalaman kurang lebih 3 tahun lebih dalam 
-                            pengembangan aplikasi berbasis web dan mobile mulai analisis sesuai kebutuhan hingga pengujian
-                            Sebagai Software Developer saya terbiasa dan mampu membuat serta mengimplementasi REST API pada aplikasi.
-                        </p>
-                        <p>Dalam Merancang Dan Menganalisis Sebuah Sistem Sistem Selalu Di Bagian Backend Developer Yang Mengatur Di Bagian Server Dan Database. Beberapa Projek Saya Selalu Menggunakan PHP,Java,Golang Untuk Menghandle Dibagian Backend Sesuai Kebutuhan Sistem.
-                            Namun Saya Juga Merancang Bagian Frontend namun tidak terlalu expert,tapi lumayan cukup pengalaman di difrontend. </p>
-                    </div>
+    <title>Portofolio</title>
+</head>
+<body ng-controller="homeController">
+    <header class=""container">
+        <div class="wrapper">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <p>PORTOFOLIO</p>
                 </div>
-                <div class="pengalaman" style="margin-top: 5px;">
-                        <h4 style="font-family: Poppins;font-size: 15px;border-bottom: 2px solid black;">Pengalaman Kerja</h4>
-                        <div class="list-kerja">
-                           <div class="col-4">
-                            <h4 style="font-family: Poppins;font-size: 13px;">Asisten Dosen Labotorium Informatika Universitas Dayanu Ikshanuddin</h4>
-                            <h5 style="font-family: Poppins;font-size: 11px;">Juni 2018 - Feb 2020</h5>
-                           </div>
-                           <ul>
-                            <li >Sebagai Penanggung Jawab Dalam Membantu Dosen Proses Belajar Mengajar Dilaborotorium</li>
-                           </ul>
-                        </div>
-                        <div class="list-kerja">
-                            <div class="col-4">
-                             <h4 style="font-family: Poppins;font-size: 13px;">SISTEM INFORMASI BPDB Baubau Berbasis Website</h4>
-                             <h5 style="font-family: Poppins;font-size: 11px;">Jan 2019 - Mar 2019</h5>
-                            </div>
-                            <ul>
-                             <li >Sebagai Programmer Dalam Merancang Dan Menganalisis Sistem Yang Dibutuhkan Di Website. </li>
-                             <li >Membangun Sistem Sesuai Rancangan Menggunakan HTML,CSS,PHP, Dan Javascript </li>
-                             <li >Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan </li>
-                             <li >Melakukan Pengujian Sistem Secara Resmi Di Publikasikan Di Kantor BPDB Baubau</li>
-                             
-                             
-                            </ul>
-                         </div>
-                         <div class="list-kerja">
-                            <div class="col-4">
-                             <h4 style="font-family: Poppins;font-size: 13px;">Aplikasi Absen Karyawan Menggunakan Scan QR Barcode Berbasis Mobile</h4>
-                             <h5 style="font-family: Poppins;font-size: 11px;">Sep 2020 - Okt 2020</h5>
-                            </div>
-                            <ul>
-                             <li >Sebagai Programmer Dalam Merancang Dan Menganalisis Sistem Yang Dibutuhkan Di Aplikasi. </li>
-                             <li >Membangun Sistem Sesuai Rancangan Dengan Menggunakan Java dan Laravel </li>
-                             <li >Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan </li>
-                            </ul>
-                         </div>
-                         <div class="list-kerja">
-                            <div class="col-4">
-                             <h4 style="font-family: Poppins;font-size: 13px;">Aplikasi Online shop Berbasis Mobile</h4>
-                             <h5 style="font-family: Poppins;font-size: 11px;">Mei 2021 - Juni 2020</h5>
-                            </div>
-                            <ul>
-                             <li >Sebagai Programmer Dalam Merancang Dan Menganalisis Sistem Yang Dibutuhkan Di Aplikasi. </li>
-                             <li >Membangun Sistem Sesuai Rancangan Dengan Menggunakan Java dan Laravel </li>
-                             <li >Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan </li>
-                            </ul>
-                         </div>
-                         <div class="list-kerja">
-                            <div class="col-4">
-                             <h4 style="font-family: Poppins;font-size: 13px;">E-Library Universitas Dayanu Ikshanuddin Baubau Berbasis Website</h4>
-                             <h5 style="font-family: Poppins;font-size: 11px;">Nov 2022 - Des 2022</h5>
-                            </div>
-                            <ul>
-                             <li >Sebagai Staft IT Dan Programmer Dalam Merancang Dan Menganalisis Sistem Yang Dibutuhkan Di Website. </li>
-                             <li >Membangun Sistem Sesuai Rancangan Menggunakan Framework Laravel Dan Angular JS </li>
-                             <li >Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan </li>
-                             <li >Melakukan Pengujian Sistem Secara Resmi Di Publikasikan Di Ruangan Rektor Univeristas Dayanu Ikshanuddin Baubau</li>
-                            </ul>
-                         </div>
-                   </div>
-            </div>
-           
-              
-           </div>
+                <ul class="navbar__links">
+                    <li class="navbar__link"><a href="">Home</a></li>
+                    <li class="navbar__link"><a href="#pengalaman">Pengalaman</a></li>
+                    <li class="navbar__link"><a href="#pendidikan">Pendidikan</a></li>
+                    <li class="navbar__link"><a href="#keahlian">Keahlian</a></li>
+                    <li class="navbar__link"><a href="#keahlian">Kontak</a></li>
+                   
+                </ul>
+                <div class="navbar__ham">
+                    <div class="navbar__icon"></div>
+                </div>
+            </nav>
         </div>
-    </div>
+    </header>
+    <section id="home">
+        <div class="home-content">
+               <div class="home-img">
+                <img src="3X4 1.jpg">
+               </div>
+        </div>
+        <div class="home-content">
+            <h1>{{about_me.name}}</h1>
+            <h3>{{about_me.position}}</h3>
+            <p>{{about_me.kontent}}</p>
+                <div class="btn-box">
+                    <a href="#pendidikan">Resume</a>
+                    <a href="#" id="openCv">CV</a>
+                </div>
+        </div>
+    </section>
+    <section class="pendidikan">
+        <div class="container">
+            <main class="row">
+                <section class="col" id="pendidikan">
+                    <div class="title">
+                        <h2>Pendidikan</h2>
+                    </div>
+                    <div class="contents">
+                        <div class="box" ng-repeat="row in pendidikan">
+                            <h4>{{row.tahun}}</h4>
+                            <h3>{{row.sekolah}}</h3>
+                            <p>{{row.ket}}</p>
+                        </div>
+                      
+                    </div>
+                </section>
+                <section class="col" id="pengalaman">
+                    <div class="title">
+                        <h2>Pengalaman Kerja</h2>
+                    </div>
+                    <div class="contents">
+                        <div class="box" ng-repeat="row in pengalaman_kerja">
+                            <h4>{{row.tahun}}</h4>
+                            <h3>{{row.judul}}</h3>
+                            <ul>
+                                <li ng-repeat="res in row.data">{{res}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>      
+        </div>
+    </section>
+    <section id="keahlian">
+        <div class="container">
+            <div class="banner__title">
+                <h4>Keahlian</h4>
+            </div>
+            <div class="contagion__cards">
+                <div class="contagion__card">
+                    <img src="image/html.png" alt="">
+                    <h2>HTML & CSS</h2>
+                </div>
+                <div class="contagion__card">
+                    <img src="image/js.png" alt="">
+                    <h2>JS (Angular Dan React Js)</h2>
+                </div>
+                <div class="contagion__card">
+                    <img src="image/php.jpeg" alt="">
+                    <h2>PHP (Laravel & CI)</h2>
+                </div>
+            </div>
+            <div class="contagion__cards">
+                <div class="contagion__card">
+                    <img src="image/java_kotlin.png" alt="">
+                    <h2>Java & Kotlin (Mobile Developer)</h2>
+                </div>
+                <div class="contagion__card">
+                    <img src="image/golang.png" alt="">
+                    <h2>Golang (Gorm & Gim)</h2>
+                </div>
+                <div class="contagion__card">
+                    <img src="image/github.png" alt="">
+                    <h2>Github</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="angularjs/angular.min.js"></script>
+    <script src="main.js"></script>
    
 </body>
 </html>

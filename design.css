@@ -1,3 +1,4 @@
+
 :root{
     --orange:#FA5652;
     --green:#035755;
@@ -72,7 +73,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 25px 15px 55px 15px;
-    background-color: var(--black);
+    background-color: #081b29;
+    height: 120px;
 }
 /* logo */
 .navbar__logo{
@@ -97,7 +99,7 @@ header{
     width: 60%;
     height: 100%;
     transform: translateX(-100%);
-    background-color: var(--black);
+    background-color: #081b29;
     opacity: 0;
     z-index: 5;
     transition: var(--smooth);
@@ -114,8 +116,9 @@ header{
     list-style: none;
 }
 .navbar__link:hover{
-    background-color: #FA5652;
-    border-radius: 10px;
+        box-shadow: 0px 3px 12px 0px #00abf0;
+        border: 2px solid transparent;
+        cursor: pointer;
 }
 .navbar__link a{
     font-family: Poppins;
@@ -277,6 +280,18 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+ }
+ .home-content h1::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
  }
  .home-content h3{
     font-size: 25px;
@@ -285,31 +300,117 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
  }
- .btn-box{
-    display: none;
+ .home-content h3::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.5s;
  }
+ .home-content .btn-box{
+    margin-top: 10px;
+    width: 365px;
+    height: 50px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+ }
+ .home-content .btn-box::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2s;
+    z-index: 2;
+ }
+ .btn-box a{
+    display: inline-flex;
+    width: 150px;
+    height: 100%;
+    position: relative;
+    background-color: #00abf0;
+    border:  2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: .5s;
+ }
+ .btn-box a::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #081b29;
+    z-index: -1;
+    transition: .5s;
+ }
+.btn-box a:hover{
+        color: white;
+    }
+.btn-box a:hover::before{
+    width: 100%;   
+ }
+ .btn-box a:nth-child(2){
+    background-color: #081b29;
+    color: #00abf0;
+ }
+ .btn-box a:nth-child(2)::before{
+    background-color: #00abf0;
+    color: #081b29;
+ }
+ .btn-box a:nth-child(2):hover{
+    background-color:#00abf0;
+    color:white;
+
+ }
+ 
  .home-content p{
     font-size: 13px;
     text-align: justify;
+    position: relative;
  }
-.home-content-img-mobile{
-    margin: 0;
-    max-width: 100%;
-    display: block;
-  
+ .home-content p::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.7s;
  }
+
  .home-img{
     max-width: 320px;
     margin: auto;
     padding:30px;
-    margin-top: -20px;
+    margin-top: 10px;
     align-items: center;
  }
  .home-img img{
     border-radius: 50%;
     width: 250px;
-    height: 250px;
+    height: 280px;
     margin: auto;
 
  }
@@ -432,7 +533,18 @@ main.row{
         align-items: center;
         padding: 25px 15px 55px 15px;
         background-color: #081b29;
-       
+    }
+    .navbar::before{
+      
+            content: "";
+            position:absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background:#081b29;
+            animation: showRight 2s ease forwards;
+            animation-delay: 3.5s;
     }
     .navbar__links{
         position: initial;
@@ -442,8 +554,19 @@ main.row{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-    
     }
+    .navbar__links::before{
+        content: "";
+        position:absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 2s ease forwards;
+        animation-delay: 3.7s;
+    }
+
     .navbar__link{
         margin: 0 25px;
     }
@@ -452,8 +575,11 @@ main.row{
         font-family: Poppins;
         font-size: 15px;
     }
-    .navbar__link:a:hover{
-        color: var(--orange);
+    .navbar__link:hover{
+        box-shadow: 5px 3px 12px 5px #00abf0;
+        border: 2px solid transparent;
+        background: transparent;
+        cursor: pointer;
     }
     .navbar__btn{
         margin-left: 0;
@@ -471,7 +597,7 @@ main.row{
         align-items: center;
         justify-content: center;
         padding: 0 10%;
-        height: 80vh;
+        height: 90vh;
      }
      .home-content{
         max-width: 600px;
@@ -480,15 +606,51 @@ main.row{
      .home-content h1{
         font-size: 56px;
         font-weight: 700;
+        position: relative;
+     }
+     .home-content h1::before{
+        content: "";
+        position:absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 2s ease forwards;
+        animation-delay: 1s;
      }
      .home-content h3{
         font-size: 32px;
+        position: relative;
         color: #00abf0;
         font-weight: 700;
      }
+     .home-content h3::before{
+        content: "";
+        position:absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 2s ease forwards;
+        animation-delay: 1.3s;
+     }
      .home-content p{
         font-size: 15px;
+        position: relative;
         text-align: justify;
+     }
+     .home-content p::before{
+        content: "";
+        position:absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 2s ease forwards;
+        animation-delay: 1.5s;
      }
 
 
@@ -496,8 +658,25 @@ main.row{
         margin-top: 10px;
         width: 365px;
         height: 50px;
+        position: relative;
         display: block;
+        display: flex;
+        justify-content: space-between;
      }
+
+     .home-content .btn-box::before{
+        content: "";
+        position:absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 2s ease forwards;
+        animation-delay: 1.9s;
+        z-index: 2;
+     }
+     
      .btn-box a{
         display: inline-flex;
         width: 150px;
@@ -514,6 +693,7 @@ main.row{
         justify-content: center;
         align-items: center;
         z-index: 1;
+        transition: .5s;
      }
      .btn-box a::before{
         content: "";
@@ -524,7 +704,8 @@ main.row{
         height: 100%;
         background-color: #081b29;
         z-index: -1;
-        transition: var(--smooth);
+        transition: .5s;
+        
      }
     .btn-box a:hover{
             color: white;
@@ -532,6 +713,22 @@ main.row{
     .btn-box a:hover::before{
         width: 100%;   
      }
+     .btn-box a:nth-child(2){
+        background-color: transparent;
+        color: #00abf0;
+     }
+     .btn-box a:nth-child(2)::before{
+        background-color: #00abf0;
+        color: #081b29;
+     }
+     .btn-box a:nth-child(2):hover{
+        background-color:#00abf0;
+        color:white;
+
+     }
+     
+     
+
      
     /* contagion card */
     #keahlian .banner__title{
@@ -656,6 +853,9 @@ main.row{
         padding: 10px;
         transition: var(--smooth); 
     }
+    .contagion__card h2{
+        color: white;
+    }
     .contagion__card:hover{
         box-shadow: 0px 3px 12px 0px #00abf0;
         border: 2px solid transparent;
@@ -680,4 +880,12 @@ main.row{
     
 
   
+ }
+
+
+ /* keyframes animation */
+@keyframes showRight {
+    100%{
+        width: 0; 
+    }
  }
