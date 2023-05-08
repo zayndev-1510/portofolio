@@ -52,10 +52,10 @@ app.controller("homeController", function ($scope) {
     fun.pengalaman_kerja=[
         {tahun:"Juni 2018 - Februari 2020",judul:"Asisten Dosen Laboratorium Teknik Informatika Unidayan Baubau",data:
         ["Sebagai Penanggung Jawab Dalam Membantu Dosen Proses Belajar Mengajar Dilaborotorium"]},
-        {tahun:"Januari 2019 - Maret 2019",judul:"SISTEM INFORMASI BPDB BAUBAU BERBASIS WEBSITE",data:
+        {tahun:"Januari 2019 - Maret 2019",judul:"SISTEM INFORMASI BPDB BUTON BAUBAU BERBASIS WEBSITE",data:
         ["Sebagai Programmer Dalam Merancang Dan Menganalisis Sistem Yang Dibutuhkan Di Website",
         "Membangun Sistem Sesuai Rancangan Menggunakan HTML,CSS,PHP, Dan Javascript","Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan",
-        "Melakukan Pengujian Sistem Secara Resmi Di Publikasikan Di Kantor BPDB Baubau"]},
+        "Melakukan Pengujian Sistem Secara Resmi Di Publikasikan Di Kantor BPDB BUTON Baubau"]},
         {tahun:"September 2020 - Oktober 2020",judul:"Aplikasi Absen Karyawan Menggunakan Scan QR Barcode Berbasis Mobile",data:
         ["Sebagai Programmer Dalam Merancang Dan Menganalisis Sistem Yang Dibutuhkan Di Aplikasi","Membangun Sistem Sesuai Rancangan Dengan Menggunakan Java dan Laravel",
     "Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan"]},
@@ -78,6 +78,12 @@ app.controller("homeController", function ($scope) {
         {keterangan:"HTML & CSS"},  {keterangan:"Javascript ( React Js & Angular JS )"},{keterangan:"PHP ( Laravel & CI )"},
         {keterangan:"Java & Kotlin ( Mobile Appllication )"},  {keterangan:"Golang ( Gorm & Gin )"},{keterangan:"Github"},
     ];
+
+    fun.getPengalaman=(id)=>{
+        $('html, body').animate({
+            scrollTop: $("#"+id).offset().top
+        }, 500);
+    }
     
     
 });

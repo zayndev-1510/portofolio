@@ -17,9 +17,9 @@
                 </div>
                 <ul class="navbar__links">
                     <li class="navbar__link"><a href="">Home</a></li>
-                    <li class="navbar__link"><a href="#pengalaman">Pengalaman</a></li>
-                    <li class="navbar__link"><a href="#pendidikan">Pendidikan</a></li>
-                    <li class="navbar__link"><a href="#keahlian">Keahlian</a></li>
+                    <li class="navbar__link" ng-click="getPengalaman('pengalaman')"><a href="#">Pengalaman</a></li>
+                    <li class="navbar__link" ng-click="getPengalaman('pendidikan')"><a href="#">Pendidikan</a></li>
+                    <li class="navbar__link" ng-click="getPengalaman('keahlian')"><a href="#">Keahlian</a></li>
                 </ul>
                 <div class="navbar__ham">
                     <div class="navbar__icon"></div>
@@ -94,6 +94,7 @@
             </div>      
         </div>
     </section>
+    <script src="jquery-3.3.1.min.js"></script>
     <script src="angularjs/angular.min.js"></script>
     <script src="main.js"></script>
    
