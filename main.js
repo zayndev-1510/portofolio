@@ -35,7 +35,7 @@ app.controller("homeController", function ($scope) {
 
     // deklarasi variabel
     var fun = $scope;
-    var str="Saya Adalah Full Stack developer yang mampu membangun aplikasi berbasis website dan mobile dengan menggunakan stack teknologi modern, serta mampu merancang dan menganalisis sebuah sistem atau aplikasi sesuai kebutuhan dan memiliki pengalaman kurang lebih 3 tahun lebih dalam pengembangan aplikasi berbasis web dan mobile mulai analisis sesuai kebutuhan hingga pengujian.";
+    var str="";
 
     fun.about_me={
         name:"Hai, I'm Zayn",
