@@ -12,7 +12,7 @@ openCV.addEventListener("click",()=>{
     var page=document.createElement("a");
     page.target="__blank";
     page.title="CV";
-    page.href="CV_KENSINO_ODE.pdf";
+    page.href="CV_KENSINO ODE.pdf";
     page.click();
 })
 
