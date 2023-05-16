@@ -58,10 +58,13 @@ app.controller("homeController", function ($scope) {
         "Melakukan Pengujian Sistem Secara Resmi Di Publikasikan Di Kantor BPDB BUTON Baubau"]},
         {tahun:"September 2020 - Oktober 2020",judul:"Aplikasi Absen Karyawan Menggunakan Scan QR Barcode Berbasis Mobile",data:
         ["Sebagai Programmer Dalam Merancang Dan Menganalisis Sistem Yang Dibutuhkan Di Aplikasi","Membangun Sistem Sesuai Rancangan Dengan Menggunakan Java dan Laravel",
-    "Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan"]},
+    "Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan","Untuk Aplikasi Telah Berhenti"]},
         {tahun:"Oktober 2022 - Desember 2022",judul:"E-Library Universitas Dayanu Ikshanuddin Baubau Berbasis Website",data:
-        ["Sebagai Staft IT Dan Programmer Dalam Merancang Dan Menganalisis Sistem Yang Dibutuhkan Di Website.","Membangun Sistem Sesuai Rancangan Menggunakan Framework Laravel Dan Angular JS",
-    "Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan","Melakukan Pengujian Sistem Secara Resmi Di Publikasikan Di Ruangan Rektor Univeristas Dayanu Ikshanuddin Baubau"
+        ["Sebagai Staft IT Dan Programmer Dalam Merancang Dan Menganalisis Sistem Yang Dibutuhkan Di Website.",
+        "Membangun Sistem Sesuai Rancangan Menggunakan Framework Laravel Dan Angular JS",
+    "Melakukan Pengujian Sistem Secara Manual Sebelum Dipublikasikan",
+    "Melakukan Pengujian Sistem Secara Resmi Di Publikasikan Di Ruangan Rektor Univeristas Dayanu Ikshanuddin Baubau",
+    "Masih Berjalan link (https://elibrary.unidayan.ac.id/)"
     ]},
     ]
     fun.hardskill=[
